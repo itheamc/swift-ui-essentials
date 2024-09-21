@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUiEssentialsApp: App {
     var body: some Scene {
         WindowGroup {
-            ColorPickerView()
+            ContentView()
         }
     }
 }

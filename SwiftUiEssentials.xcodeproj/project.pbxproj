@@ -6,23 +6,44 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		847A10272C9D269500E90EFF /* SwiftUiEssentials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SwiftUiEssentials.app; path = "/Users/admin/Documents/SwiftUiEssentials/build/Debug-iphoneos/SwiftUiEssentials.app"; sourceTree = "<absolute>"; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		840A0FFF2C9D7FC10064C5E3 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 840A0FFE2C9D7FC10064C5E3 /* SQLite */; };
+		84CBA59C2C9E755F0048D17C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CBA5922C9E755F0048D17C /* Preview Assets.xcassets */; };
+		84CBA59D2C9E755F0048D17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CBA5982C9E755F0048D17C /* Assets.xcassets */; };
+		84CBA59E2C9E755F0048D17C /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA5892C9E755F0048D17C /* ApiConfig.swift */; };
+		84CBA59F2C9E755F0048D17C /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA58A2C9E755F0048D17C /* ApiEndpoint.swift */; };
+		84CBA5A02C9E755F0048D17C /* ApiNetworkRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA58D2C9E755F0048D17C /* ApiNetworkRequestService.swift */; };
+		84CBA5A12C9E755F0048D17C /* NetworkRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA58E2C9E755F0048D17C /* NetworkRequestService.swift */; };
+		84CBA5A22C9E755F0048D17C /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA5952C9E755F0048D17C /* ColorPickerView.swift */; };
+		84CBA5A32C9E755F0048D17C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA5992C9E755F0048D17C /* ContentView.swift */; };
+		84CBA5A42C9E755F0048D17C /* SwiftUiEssentialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA59A2C9E755F0048D17C /* SwiftUiEssentialsApp.swift */; };
+		84CBA5A72C9E76010048D17C /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA5A62C9E76010048D17C /* DatabaseManager.swift */; };
+		84CBA5AA2C9E86090048D17C /* TodoTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA5A92C9E86090048D17C /* TodoTable.swift */; };
+		84CBA5AF2C9E8B3F0048D17C /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA5AE2C9E8B3F0048D17C /* DateUtils.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		847A10292C9D269500E90EFF /* SwiftUiEssentials */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftUiEssentials;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		840A0FE32C9D69D00064C5E3 /* SwiftUiEssentials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUiEssentials.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CBA5892C9E755F0048D17C /* ApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfig.swift; sourceTree = "<group>"; };
+		84CBA58A2C9E755F0048D17C /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
+		84CBA58D2C9E755F0048D17C /* ApiNetworkRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNetworkRequestService.swift; sourceTree = "<group>"; };
+		84CBA58E2C9E755F0048D17C /* NetworkRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestService.swift; sourceTree = "<group>"; };
+		84CBA5922C9E755F0048D17C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84CBA5952C9E755F0048D17C /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		84CBA5982C9E755F0048D17C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84CBA5992C9E755F0048D17C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84CBA59A2C9E755F0048D17C /* SwiftUiEssentialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiEssentialsApp.swift; sourceTree = "<group>"; };
+		84CBA5A62C9E76010048D17C /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		84CBA5A92C9E86090048D17C /* TodoTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTable.swift; sourceTree = "<group>"; };
+		84CBA5AE2C9E8B3F0048D17C /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		847A10242C9D269500E90EFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840A0FFF2C9D7FC10064C5E3 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,8 +53,124 @@
 		847A101E2C9D269500E90EFF = {
 			isa = PBXGroup;
 			children = (
-				847A10292C9D269500E90EFF /* SwiftUiEssentials */,
+				84CBA59B2C9E755F0048D17C /* SwiftUiEssentials */,
+				840A0FE32C9D69D00064C5E3 /* SwiftUiEssentials.app */,
 			);
+			sourceTree = "<group>";
+		};
+		84CBA58B2C9E755F0048D17C /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				84CBA5892C9E755F0048D17C /* ApiConfig.swift */,
+				84CBA58A2C9E755F0048D17C /* ApiEndpoint.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		84CBA58C2C9E755F0048D17C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				84CBA58B2C9E755F0048D17C /* Api */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		84CBA58F2C9E755F0048D17C /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				84CBA58D2C9E755F0048D17C /* ApiNetworkRequestService.swift */,
+				84CBA58E2C9E755F0048D17C /* NetworkRequestService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		84CBA5902C9E755F0048D17C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84CBA58F2C9E755F0048D17C /* NetworkService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84CBA5912C9E755F0048D17C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				84CBA58C2C9E755F0048D17C /* Config */,
+				84CBA5902C9E755F0048D17C /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		84CBA5932C9E755F0048D17C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				84CBA5922C9E755F0048D17C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84CBA5942C9E755F0048D17C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		84CBA5962C9E755F0048D17C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				84CBA5952C9E755F0048D17C /* ColorPickerView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		84CBA5972C9E755F0048D17C /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+				84CBA5942C9E755F0048D17C /* Features */,
+				84CBA5962C9E755F0048D17C /* Shared */,
+			);
+			path = Ui;
+			sourceTree = "<group>";
+		};
+		84CBA59B2C9E755F0048D17C /* SwiftUiEssentials */ = {
+			isa = PBXGroup;
+			children = (
+				84CBA5AB2C9E8AD00048D17C /* Utils */,
+				84CBA5912C9E755F0048D17C /* Core */,
+				84CBA5A52C9E75730048D17C /* Database */,
+				84CBA5972C9E755F0048D17C /* Ui */,
+				84CBA59A2C9E755F0048D17C /* SwiftUiEssentialsApp.swift */,
+				84CBA5932C9E755F0048D17C /* Preview Content */,
+				84CBA5982C9E755F0048D17C /* Assets.xcassets */,
+				84CBA5992C9E755F0048D17C /* ContentView.swift */,
+			);
+			path = SwiftUiEssentials;
+			sourceTree = "<group>";
+		};
+		84CBA5A52C9E75730048D17C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				84CBA5A82C9E85F30048D17C /* Tables */,
+				84CBA5A62C9E76010048D17C /* DatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		84CBA5A82C9E85F30048D17C /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				84CBA5A92C9E86090048D17C /* TodoTable.swift */,
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
+		84CBA5AB2C9E8AD00048D17C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				84CBA5AE2C9E8B3F0048D17C /* DateUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -51,14 +188,12 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				847A10292C9D269500E90EFF /* SwiftUiEssentials */,
-			);
 			name = SwiftUiEssentials;
 			packageProductDependencies = (
+				840A0FFE2C9D7FC10064C5E3 /* SQLite */,
 			);
 			productName = SwiftUiEssentials;
-			productReference = 847A10272C9D269500E90EFF /* SwiftUiEssentials.app */;
+			productReference = 840A0FE32C9D69D00064C5E3 /* SwiftUiEssentials.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,6 +220,9 @@
 			);
 			mainGroup = 847A101E2C9D269500E90EFF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				840A0FFD2C9D7FC10064C5E3 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 847A101E2C9D269500E90EFF;
 			projectDirPath = "";
@@ -100,6 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CBA59C2C9E755F0048D17C /* Preview Assets.xcassets in Resources */,
+				84CBA59D2C9E755F0048D17C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +250,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CBA5AA2C9E86090048D17C /* TodoTable.swift in Sources */,
+				84CBA5A72C9E76010048D17C /* DatabaseManager.swift in Sources */,
+				84CBA59E2C9E755F0048D17C /* ApiConfig.swift in Sources */,
+				84CBA59F2C9E755F0048D17C /* ApiEndpoint.swift in Sources */,
+				84CBA5A02C9E755F0048D17C /* ApiNetworkRequestService.swift in Sources */,
+				84CBA5A12C9E755F0048D17C /* NetworkRequestService.swift in Sources */,
+				84CBA5AF2C9E8B3F0048D17C /* DateUtils.swift in Sources */,
+				84CBA5A22C9E755F0048D17C /* ColorPickerView.swift in Sources */,
+				84CBA5A32C9E755F0048D17C /* ContentView.swift in Sources */,
+				84CBA5A42C9E755F0048D17C /* SwiftUiEssentialsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +463,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		840A0FFD2C9D7FC10064C5E3 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		840A0FFE2C9D7FC10064C5E3 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 840A0FFD2C9D7FC10064C5E3 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 847A101F2C9D269500E90EFF /* Project object */;
 }
