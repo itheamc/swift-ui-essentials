@@ -20,7 +20,7 @@ class DatabaseManager {
     // Instance of URLSession
     let database: Connection?
     
-    // Tablse
+    // Tables
     let todos: TodoTable
     
     // Constructor
