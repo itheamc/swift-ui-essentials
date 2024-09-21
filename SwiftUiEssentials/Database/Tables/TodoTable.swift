@@ -84,7 +84,7 @@ class TodoTable {
     
     // Function to update a todo item
     //
-    func updateTodo(id: Int64, newTitle: String?, newBody: String?) async -> Bool {
+    func update(id: Int64, newTitle: String?, newBody: String?) async -> Bool {
         guard let db = db else {
             print("Database connection not available.")
             return false
@@ -113,7 +113,7 @@ class TodoTable {
 
     // Function to delete a todo item
     //
-    func deleteTodo(id: Int64) async -> Bool {
+    func delete(id: Int64) async -> Bool {
         guard let db = db else {
             print("Database connection not available.")
             return false

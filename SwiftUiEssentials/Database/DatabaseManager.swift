@@ -18,7 +18,7 @@ class DatabaseManager {
     private static let databaseFileName = "db.sqlite3"
     
     // Instance of URLSession
-    let database: Connection?
+    private let database: Connection?
     
     // Tables
     let todos: TodoTable
