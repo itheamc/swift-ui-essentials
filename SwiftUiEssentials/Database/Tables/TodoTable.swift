@@ -149,6 +149,23 @@ class TodoTable {
             return nil
         }
     }
+    
+    // Function to count todos
+    //
+    func count() async -> Int {
+        guard let db = self.db else {
+            print("Database connection not available.")
+            return 0
+        }
+        
+        do {
+            let count = try db.scalar(self.todos.count)
+            return count
+        } catch {
+            print("Failed to delete todo: \(error)")
+            return 0
+        }
+    }
 
 
     // Function to insert a new todo item asynchronously
@@ -183,7 +200,7 @@ class TodoTable {
 
     // Function to get all todos asynchronously
     //
-    func getAllAsync() async -> [Row]? {
+    func getAllAsync() async -> [ToDo]? {
         await withCheckedContinuation { continuation in
             DispatchQueue.global(qos: .userInitiated).async {
                 guard let db = self.db else {
@@ -194,7 +211,16 @@ class TodoTable {
 
                 do {
                     let rows = Array(try db.prepare(self.todos))
-                    continuation.resume(returning: rows)
+                    let todos = rows.map {
+                        ToDo(
+                            id: $0[self.id],
+                            title: $0[self.title],
+                            body: $0[self.body],
+                            createdAt: $0[self.createdAt],
+                            updatedAt: $0[self.updatedAt]
+                        )
+                    }
+                    continuation.resume(returning: todos)
                 } catch {
                     print("Failed to fetch todos: \(error)")
                     continuation.resume(returning: nil)
@@ -263,6 +289,38 @@ class TodoTable {
             }
         }
     }
+    
+    // Function to count todos asrnchronously
+    //
+    func countAsync() async -> Int {
+        await withCheckedContinuation { continuation in
+            DispatchQueue.global(qos: .userInitiated).async {
+                guard let db = self.db else {
+                    print("Database connection not available.")
+                    continuation.resume(returning: 0)
+                    return
+                }
+                
+                let countQuery = self.todos.count
+                
+                do {
+                    let count = try db.scalar(countQuery)
+                    continuation.resume(returning: count)
+                } catch {
+                    print("Failed to delete todo: \(error)")
+                    continuation.resume(returning: 0)
+                }
+                
+            }
+        }
+    }
+}
 
 
+struct ToDo: Identifiable {
+    let id: Int64;
+    let title: String?;
+    let body: String?;
+    let createdAt: String?;
+    let updatedAt: String?;
 }

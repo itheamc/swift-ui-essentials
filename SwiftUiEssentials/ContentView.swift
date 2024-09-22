@@ -16,12 +16,30 @@ struct ContentView: View {
             Text("Hello, world!")
             Button("Add Todo") {
                 Task {
-                    if let inserted = await DatabaseManager
+//                    let count = await DatabaseManager
+//                        .shared
+//                        .todos
+//                        .countAsync()
+//                    
+//                    for i in (count + 1)...(count + 50) {
+//                        let _ = await DatabaseManager
+//                            .shared
+//                            .todos
+//                            .insertAsync(title: "New Todo \(i)", body: "New Todo \(i) // Body")
+//                    }
+//                    
+//                    let count1 = await DatabaseManager
+//                        .shared
+//                        .todos
+//                        .count()
+//                    print("Todo count1 \(count1)")
+                    
+                    if let todos = await DatabaseManager
                         .shared
                         .todos
-                        .insertAsync(title: "New Todo", body: "New Todo Body") {
-                        print("Todo inserted \(inserted)")
-                    }
+                        .getAllAsync() {
+                        todos.forEach { print($0.title ?? "") }
+                        }
                 }
             }
         }

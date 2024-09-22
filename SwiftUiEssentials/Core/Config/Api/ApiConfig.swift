@@ -35,7 +35,7 @@ struct ApiConfig {
     /// Computed property to switch between base URLs.
     static var baseUrl: String {
         #if DEBUG
-        return stagingBaseUrl
+        return productionBaseUrl
         #else
         return productionBaseUrl
         #endif

@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+protocol UsersRepository {
+    func fetchUsers<T: Decodable>(
+        parameters: [String: String]?,
+        initiated: @escaping () -> Void,
+        completion: @escaping (Result<T, Error>) -> Void
+    )
+}
