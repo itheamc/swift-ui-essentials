@@ -25,6 +25,14 @@
 		84D6EC702C9FFA0200B2A21B /* UsersRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D6EC6F2C9FFA0200B2A21B /* UsersRepositoryImpl.swift */; };
 		84D6EC732C9FFD3700B2A21B /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D6EC722C9FFD3700B2A21B /* UsersViewModel.swift */; };
 		84D6EC762C9FFEE400B2A21B /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D6EC752C9FFEE400B2A21B /* UsersListView.swift */; };
+		84F013DD2CA0628700D8F402 /* LoginRequestState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013DC2CA0628700D8F402 /* LoginRequestState.swift */; };
+		84F013DF2CA062C000D8F402 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013DE2CA062C000D8F402 /* LoginResponse.swift */; };
+		84F013E12CA0644500D8F402 /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013E02CA0644500D8F402 /* RegisterResponse.swift */; };
+		84F013E32CA064DB00D8F402 /* ForgotPasswordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013E22CA064DB00D8F402 /* ForgotPasswordResponse.swift */; };
+		84F013E52CA0654600D8F402 /* RegisterResponseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013E42CA0654600D8F402 /* RegisterResponseState.swift */; };
+		84F013E72CA0659F00D8F402 /* ForgotPasswordRequestState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013E62CA0659F00D8F402 /* ForgotPasswordRequestState.swift */; };
+		84F013E92CA0670E00D8F402 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013E82CA0670E00D8F402 /* AuthRepository.swift */; };
+		84F013EB2CA0672700D8F402 /* AuthRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013EA2CA0672700D8F402 /* AuthRepositoryImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +54,14 @@
 		84D6EC6F2C9FFA0200B2A21B /* UsersRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRepositoryImpl.swift; sourceTree = "<group>"; };
 		84D6EC722C9FFD3700B2A21B /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		84D6EC752C9FFEE400B2A21B /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
+		84F013DC2CA0628700D8F402 /* LoginRequestState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestState.swift; sourceTree = "<group>"; };
+		84F013DE2CA062C000D8F402 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		84F013E02CA0644500D8F402 /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		84F013E22CA064DB00D8F402 /* ForgotPasswordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordResponse.swift; sourceTree = "<group>"; };
+		84F013E42CA0654600D8F402 /* RegisterResponseState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponseState.swift; sourceTree = "<group>"; };
+		84F013E62CA0659F00D8F402 /* ForgotPasswordRequestState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRequestState.swift; sourceTree = "<group>"; };
+		84F013E82CA0670E00D8F402 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		84F013EA2CA0672700D8F402 /* AuthRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +138,7 @@
 		84CBA5942C9E755F0048D17C /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				84F013D72CA0608500D8F402 /* Auth */,
 				84D6EC682C9FF97600B2A21B /* Users */,
 			);
 			path = Features;
@@ -147,14 +164,14 @@
 		84CBA59B2C9E755F0048D17C /* SwiftUiEssentials */ = {
 			isa = PBXGroup;
 			children = (
-				84CBA5AB2C9E8AD00048D17C /* Utils */,
 				84CBA5912C9E755F0048D17C /* Core */,
 				84CBA5A52C9E75730048D17C /* Database */,
 				84CBA5972C9E755F0048D17C /* Ui */,
+				84CBA5AB2C9E8AD00048D17C /* Utils */,
 				84CBA59A2C9E755F0048D17C /* SwiftUiEssentialsApp.swift */,
+				84CBA5992C9E755F0048D17C /* ContentView.swift */,
 				84CBA5932C9E755F0048D17C /* Preview Content */,
 				84CBA5982C9E755F0048D17C /* Assets.xcassets */,
-				84CBA5992C9E755F0048D17C /* ContentView.swift */,
 			);
 			path = SwiftUiEssentials;
 			sourceTree = "<group>";
@@ -187,20 +204,20 @@
 		84D6EC682C9FF97600B2A21B /* Users */ = {
 			isa = PBXGroup;
 			children = (
-				84D6EC712C9FFD1B00B2A21B /* ViewModels */,
+				84D6EC712C9FFD1B00B2A21B /* ViewModel */,
 				84D6EC6C2C9FF9B900B2A21B /* Repository */,
-				84D6EC692C9FF97E00B2A21B /* Models */,
+				84D6EC692C9FF97E00B2A21B /* Model */,
 				84D6EC742C9FFEA500B2A21B /* View */,
 			);
 			path = Users;
 			sourceTree = "<group>";
 		};
-		84D6EC692C9FF97E00B2A21B /* Models */ = {
+		84D6EC692C9FF97E00B2A21B /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				84D6EC6A2C9FF98E00B2A21B /* User.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		84D6EC6C2C9FF9B900B2A21B /* Repository */ = {
@@ -212,12 +229,12 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
-		84D6EC712C9FFD1B00B2A21B /* ViewModels */ = {
+		84D6EC712C9FFD1B00B2A21B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				84D6EC722C9FFD3700B2A21B /* UsersViewModel.swift */,
 			);
-			path = ViewModels;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		84D6EC742C9FFEA500B2A21B /* View */ = {
@@ -226,6 +243,53 @@
 				84D6EC752C9FFEE400B2A21B /* UsersListView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		84F013D72CA0608500D8F402 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				84F013DB2CA0620900D8F402 /* Enums */,
+				84F013DA2CA060AE00D8F402 /* ViewModel */,
+				84F013D92CA060A600D8F402 /* Repository */,
+				84F013D82CA0609E00D8F402 /* Model */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		84F013D82CA0609E00D8F402 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84F013DE2CA062C000D8F402 /* LoginResponse.swift */,
+				84F013E02CA0644500D8F402 /* RegisterResponse.swift */,
+				84F013E22CA064DB00D8F402 /* ForgotPasswordResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84F013D92CA060A600D8F402 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				84F013E82CA0670E00D8F402 /* AuthRepository.swift */,
+				84F013EA2CA0672700D8F402 /* AuthRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		84F013DA2CA060AE00D8F402 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84F013DB2CA0620900D8F402 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				84F013DC2CA0628700D8F402 /* LoginRequestState.swift */,
+				84F013E42CA0654600D8F402 /* RegisterResponseState.swift */,
+				84F013E62CA0659F00D8F402 /* ForgotPasswordRequestState.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,20 +369,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F013EB2CA0672700D8F402 /* AuthRepositoryImpl.swift in Sources */,
 				84CBA5AA2C9E86090048D17C /* TodoTable.swift in Sources */,
+				84F013E92CA0670E00D8F402 /* AuthRepository.swift in Sources */,
 				84CBA5A72C9E76010048D17C /* DatabaseManager.swift in Sources */,
 				84CBA59E2C9E755F0048D17C /* ApiConfig.swift in Sources */,
 				84CBA59F2C9E755F0048D17C /* ApiEndpoint.swift in Sources */,
+				84F013E32CA064DB00D8F402 /* ForgotPasswordResponse.swift in Sources */,
 				84CBA5A02C9E755F0048D17C /* ApiNetworkRequestService.swift in Sources */,
+				84F013DD2CA0628700D8F402 /* LoginRequestState.swift in Sources */,
 				84CBA5A12C9E755F0048D17C /* NetworkRequestService.swift in Sources */,
 				84CBA5AF2C9E8B3F0048D17C /* DateUtils.swift in Sources */,
 				84D6EC762C9FFEE400B2A21B /* UsersListView.swift in Sources */,
+				84F013E12CA0644500D8F402 /* RegisterResponse.swift in Sources */,
+				84F013E72CA0659F00D8F402 /* ForgotPasswordRequestState.swift in Sources */,
+				84F013E52CA0654600D8F402 /* RegisterResponseState.swift in Sources */,
 				84CBA5A22C9E755F0048D17C /* ColorPickerView.swift in Sources */,
 				84D6EC702C9FFA0200B2A21B /* UsersRepositoryImpl.swift in Sources */,
 				84CBA5A32C9E755F0048D17C /* ContentView.swift in Sources */,
 				84CBA5A42C9E755F0048D17C /* SwiftUiEssentialsApp.swift in Sources */,
 				84D6EC6E2C9FF9CF00B2A21B /* UsersRepository.swift in Sources */,
 				84D6EC732C9FFD3700B2A21B /* UsersViewModel.swift in Sources */,
+				84F013DF2CA062C000D8F402 /* LoginResponse.swift in Sources */,
 				84D6EC6B2C9FF98E00B2A21B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
