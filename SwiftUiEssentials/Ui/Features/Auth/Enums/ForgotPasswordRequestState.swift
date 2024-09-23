@@ -10,7 +10,7 @@ import Foundation
 // MARK: - ForgotPasswordRequestState
 enum ForgotPasswordRequestState {
     case idle
-    case loggingIn
+    case requesting
     case success(ForgotPasswordResponse)
     case failure(String)
 }

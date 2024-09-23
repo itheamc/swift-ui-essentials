@@ -29,10 +29,14 @@
 		84F013DF2CA062C000D8F402 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013DE2CA062C000D8F402 /* LoginResponse.swift */; };
 		84F013E12CA0644500D8F402 /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013E02CA0644500D8F402 /* RegisterResponse.swift */; };
 		84F013E32CA064DB00D8F402 /* ForgotPasswordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013E22CA064DB00D8F402 /* ForgotPasswordResponse.swift */; };
-		84F013E52CA0654600D8F402 /* RegisterResponseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013E42CA0654600D8F402 /* RegisterResponseState.swift */; };
+		84F013E52CA0654600D8F402 /* RegisterRequestState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013E42CA0654600D8F402 /* RegisterRequestState.swift */; };
 		84F013E72CA0659F00D8F402 /* ForgotPasswordRequestState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013E62CA0659F00D8F402 /* ForgotPasswordRequestState.swift */; };
 		84F013E92CA0670E00D8F402 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013E82CA0670E00D8F402 /* AuthRepository.swift */; };
 		84F013EB2CA0672700D8F402 /* AuthRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013EA2CA0672700D8F402 /* AuthRepositoryImpl.swift */; };
+		84FB0D1E2CA112C4007235C2 /* LoginRequestPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB0D1D2CA112C4007235C2 /* LoginRequestPayload.swift */; };
+		84FB0D202CA11354007235C2 /* RegisterRequestPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB0D1F2CA11354007235C2 /* RegisterRequestPayload.swift */; };
+		84FB0D222CA113ED007235C2 /* ForgotPasswordRequestPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB0D212CA113ED007235C2 /* ForgotPasswordRequestPayload.swift */; };
+		84FB0D242CA11665007235C2 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB0D232CA11665007235C2 /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,10 +62,14 @@
 		84F013DE2CA062C000D8F402 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		84F013E02CA0644500D8F402 /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
 		84F013E22CA064DB00D8F402 /* ForgotPasswordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordResponse.swift; sourceTree = "<group>"; };
-		84F013E42CA0654600D8F402 /* RegisterResponseState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponseState.swift; sourceTree = "<group>"; };
+		84F013E42CA0654600D8F402 /* RegisterRequestState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestState.swift; sourceTree = "<group>"; };
 		84F013E62CA0659F00D8F402 /* ForgotPasswordRequestState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRequestState.swift; sourceTree = "<group>"; };
 		84F013E82CA0670E00D8F402 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		84F013EA2CA0672700D8F402 /* AuthRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryImpl.swift; sourceTree = "<group>"; };
+		84FB0D1D2CA112C4007235C2 /* LoginRequestPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestPayload.swift; sourceTree = "<group>"; };
+		84FB0D1F2CA11354007235C2 /* RegisterRequestPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestPayload.swift; sourceTree = "<group>"; };
+		84FB0D212CA113ED007235C2 /* ForgotPasswordRequestPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRequestPayload.swift; sourceTree = "<group>"; };
+		84FB0D232CA11665007235C2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +270,9 @@
 				84F013DE2CA062C000D8F402 /* LoginResponse.swift */,
 				84F013E02CA0644500D8F402 /* RegisterResponse.swift */,
 				84F013E22CA064DB00D8F402 /* ForgotPasswordResponse.swift */,
+				84FB0D1D2CA112C4007235C2 /* LoginRequestPayload.swift */,
+				84FB0D1F2CA11354007235C2 /* RegisterRequestPayload.swift */,
+				84FB0D212CA113ED007235C2 /* ForgotPasswordRequestPayload.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +289,7 @@
 		84F013DA2CA060AE00D8F402 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				84FB0D232CA11665007235C2 /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -286,7 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				84F013DC2CA0628700D8F402 /* LoginRequestState.swift */,
-				84F013E42CA0654600D8F402 /* RegisterResponseState.swift */,
+				84F013E42CA0654600D8F402 /* RegisterRequestState.swift */,
 				84F013E62CA0659F00D8F402 /* ForgotPasswordRequestState.swift */,
 			);
 			path = Enums;
@@ -377,20 +389,24 @@
 				84CBA59F2C9E755F0048D17C /* ApiEndpoint.swift in Sources */,
 				84F013E32CA064DB00D8F402 /* ForgotPasswordResponse.swift in Sources */,
 				84CBA5A02C9E755F0048D17C /* ApiNetworkRequestService.swift in Sources */,
+				84FB0D1E2CA112C4007235C2 /* LoginRequestPayload.swift in Sources */,
 				84F013DD2CA0628700D8F402 /* LoginRequestState.swift in Sources */,
 				84CBA5A12C9E755F0048D17C /* NetworkRequestService.swift in Sources */,
 				84CBA5AF2C9E8B3F0048D17C /* DateUtils.swift in Sources */,
 				84D6EC762C9FFEE400B2A21B /* UsersListView.swift in Sources */,
 				84F013E12CA0644500D8F402 /* RegisterResponse.swift in Sources */,
 				84F013E72CA0659F00D8F402 /* ForgotPasswordRequestState.swift in Sources */,
-				84F013E52CA0654600D8F402 /* RegisterResponseState.swift in Sources */,
+				84F013E52CA0654600D8F402 /* RegisterRequestState.swift in Sources */,
 				84CBA5A22C9E755F0048D17C /* ColorPickerView.swift in Sources */,
+				84FB0D242CA11665007235C2 /* AuthViewModel.swift in Sources */,
 				84D6EC702C9FFA0200B2A21B /* UsersRepositoryImpl.swift in Sources */,
 				84CBA5A32C9E755F0048D17C /* ContentView.swift in Sources */,
 				84CBA5A42C9E755F0048D17C /* SwiftUiEssentialsApp.swift in Sources */,
 				84D6EC6E2C9FF9CF00B2A21B /* UsersRepository.swift in Sources */,
 				84D6EC732C9FFD3700B2A21B /* UsersViewModel.swift in Sources */,
+				84FB0D222CA113ED007235C2 /* ForgotPasswordRequestPayload.swift in Sources */,
 				84F013DF2CA062C000D8F402 /* LoginResponse.swift in Sources */,
+				84FB0D202CA11354007235C2 /* RegisterRequestPayload.swift in Sources */,
 				84D6EC6B2C9FF98E00B2A21B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  RegisterResponseState.swift
+//  RegisterRequestState.swift
 //  SwiftUiEssentials
 //
 //  Created by Amit on 22/09/2024.
@@ -7,10 +7,10 @@
 
 import Foundation
 
-// MARK: - RegisterResponseState
-enum RegisterResponseState {
+// MARK: - RegisterRequestState
+enum RegisterRequestState {
     case idle
-    case loggingIn
+    case registering
     case success(RegisterResponse)
     case failure(String)
 }
