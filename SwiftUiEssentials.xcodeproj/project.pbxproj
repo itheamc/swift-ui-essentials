@@ -17,7 +17,6 @@
 		84CBA5A02C9E755F0048D17C /* ApiNetworkRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA58D2C9E755F0048D17C /* ApiNetworkRequestService.swift */; };
 		84CBA5A12C9E755F0048D17C /* NetworkRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA58E2C9E755F0048D17C /* NetworkRequestService.swift */; };
 		84CBA5A22C9E755F0048D17C /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA5952C9E755F0048D17C /* ColorPickerView.swift */; };
-		84CBA5A32C9E755F0048D17C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA5992C9E755F0048D17C /* ContentView.swift */; };
 		84CBA5A42C9E755F0048D17C /* SwiftUiEssentialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA59A2C9E755F0048D17C /* SwiftUiEssentialsApp.swift */; };
 		84CBA5A72C9E76010048D17C /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA5A62C9E76010048D17C /* DatabaseManager.swift */; };
 		84CBA5AA2C9E86090048D17C /* TodoTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBA5A92C9E86090048D17C /* TodoTable.swift */; };
@@ -52,7 +51,6 @@
 		84CBA5922C9E755F0048D17C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84CBA5952C9E755F0048D17C /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		84CBA5982C9E755F0048D17C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		84CBA5992C9E755F0048D17C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84CBA59A2C9E755F0048D17C /* SwiftUiEssentialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiEssentialsApp.swift; sourceTree = "<group>"; };
 		84CBA5A62C9E76010048D17C /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		84CBA5A92C9E86090048D17C /* TodoTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTable.swift; sourceTree = "<group>"; };
@@ -206,7 +204,6 @@
 				84CBA5972C9E755F0048D17C /* Ui */,
 				84CBA5AB2C9E8AD00048D17C /* Utils */,
 				84CBA59A2C9E755F0048D17C /* SwiftUiEssentialsApp.swift */,
-				84CBA5992C9E755F0048D17C /* ContentView.swift */,
 				84CBA5932C9E755F0048D17C /* Preview Content */,
 				84CBA5982C9E755F0048D17C /* Assets.xcassets */,
 			);
@@ -431,7 +428,6 @@
 				84CBA5A22C9E755F0048D17C /* ColorPickerView.swift in Sources */,
 				84FB0D242CA11665007235C2 /* AuthViewModel.swift in Sources */,
 				84D6EC702C9FFA0200B2A21B /* UsersRepositoryImpl.swift in Sources */,
-				84CBA5A32C9E755F0048D17C /* ContentView.swift in Sources */,
 				84CBA5A42C9E755F0048D17C /* SwiftUiEssentialsApp.swift in Sources */,
 				84D6EC6E2C9FF9CF00B2A21B /* UsersRepository.swift in Sources */,
 				84D6EC732C9FFD3700B2A21B /* UsersViewModel.swift in Sources */,
